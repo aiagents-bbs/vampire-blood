@@ -13,20 +13,16 @@
 body{background:#fdf8f7;color:#241619;font-family:"Noto Sans Bengali","Hind Siliguri",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7}
 a{color:#d90429;text-decoration:none}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-.topbar{background:#a4133c;color:#fff;text-align:center;font-size:14px;font-weight:700;letter-spacing:.5px;padding:9px 12px}
 .nav{position:sticky;top:0;z-index:60;background:#fffffff2;backdrop-filter:blur(8px);border-bottom:1px solid #f0d9dc}
-.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:12px;padding-bottom:12px}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:12px;padding-bottom:12px}
 .logo{font-weight:800;letter-spacing:2px;font-size:19px;color:#241619}
 .logo span{color:#d90429}
-.nav-links{display:flex;gap:26px;font-size:15px;font-weight:700}
-.nav-links a{color:#6b4a50}
-.nav-links a:hover{color:#d90429}
 .btn{display:inline-block;background:#d90429;color:#fff;text-decoration:none;font-weight:700;font-size:17px;padding:13px 30px;border-radius:999px;border:0;cursor:pointer}
 .btn:hover{background:#ef233c}
 .btn.wa{background:#1faa55}
 .btn.wa:hover{background:#25c05f}
 .btn.small{padding:9px 20px;font-size:15px}
-.hero{padding:56px 0 48px}
+.hero{padding:48px 0 40px}
 .hero-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:52px;align-items:center}
 .hero-photo{position:relative}
 .hero-photo img{width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 20px 48px rgba(180,20,40,.18)}
@@ -44,46 +40,16 @@ a{color:#d90429;text-decoration:none}
 .cta-row{display:flex;gap:10px;flex-wrap:wrap}
 .trust{list-style:none;display:flex;gap:18px;flex-wrap:wrap;margin-top:20px;font-size:14px;color:#6b4a50}
 .trust li:before{content:"✓ ";color:#1faa55;font-weight:800}
-.marquee{background:#a4133c;color:#fff;overflow:hidden;padding:11px 0;font-weight:800;letter-spacing:3px;font-size:15px}
-.marquee-track{display:inline-flex;white-space:nowrap;animation:scroll 24s linear infinite}
-.marquee-track span{padding-right:12px}
-@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.stats{padding:38px 0 10px}
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.stat{background:#fff;border:1px solid #f0d9dc;border-radius:14px;padding:20px 14px;text-align:center}
-.stat b{display:block;font-size:30px;color:#a4133c;line-height:1.1}
-.stat span{font-size:14px;color:#6b4a50}
-section{padding:44px 0}
-h2{font-size:30px;text-align:center;margin-bottom:8px;color:#241619}
+section{padding:36px 0}
+h2{font-size:28px;text-align:center;margin-bottom:8px;color:#241619}
 h2:after{content:"";display:block;width:60px;height:3px;background:#d90429;margin:12px auto 0}
-.lead{text-align:center;color:#6b4a50;max-width:640px;margin:0 auto 28px}
-.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.step{background:#fff;border:1px solid #f0d9dc;border-radius:14px;padding:24px 20px;position:relative}
-.step .num{font-family:"Playfair Display",Georgia,serif;font-size:40px;color:#f3c1c8;font-weight:800;line-height:1}
-.step .ic{font-size:30px;margin:6px 0}
-.step h3{font-size:19px;margin-bottom:4px;color:#241619}
-.step p{font-size:15px;color:#6b4a50}
-.rating-line{text-align:center;color:#6b4a50;font-size:14px;margin-top:20px}
-.why{background:#fff;border-top:1px solid #f0d9dc;border-bottom:1px solid #f0d9dc}
-.why-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
-.why h2{text-align:left}
-.why h2:after{margin:12px 0 0}
-.why .lead{text-align:left;margin:0 0 20px}
-.check{list-style:none}
-.check li{display:flex;gap:12px;margin:16px 0}
-.check .tick{flex:0 0 28px;height:28px;border-radius:50%;background:#fdeef0;color:#d90429;font-weight:800;display:flex;align-items:center;justify-content:center}
-.check b{display:block;font-size:17px;color:#241619}
-.check p{font-size:15px;color:#6b4a50}
-.why-photo img{width:100%;height:auto;display:block;border-radius:16px;box-shadow:0 12px 32px rgba(180,20,40,.14)}
-.why-photo p{text-align:center;font-size:13px;color:#8a6a70;margin-top:10px}
-.spec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.spec{background:#fff;border:1px solid #f0d9dc;border-radius:12px;padding:16px 18px}
-.spec span{display:block;font-size:13px;color:#8a6a70}
-.spec b{font-size:16px;color:#241619}
-.rating-band{background:#fdeef0;text-align:center}
-.rating-band .big{font-family:"Playfair Display",Georgia,serif;font-size:56px;color:#a4133c;line-height:1}
-.rating-band .stars{font-size:24px;color:#d90429;letter-spacing:4px;margin:6px 0}
-.rating-band p{color:#6b4a50;max-width:560px;margin:0 auto}
+.lead{text-align:center;color:#6b4a50;max-width:640px;margin:0 auto 24px}
+.notes-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.note-mini{background:#fff;border:1px solid #f0d9dc;border-radius:12px;padding:18px;text-align:center}
+.note-mini .ic{font-size:28px}
+.note-mini h3{font-size:17px;margin:4px 0 2px;color:#241619}
+.note-mini p{font-size:14px;color:#6b4a50}
+.rating-line{text-align:center;color:#6b4a50;font-size:14px;margin-top:16px}
 .order-sec{background:#fff;border-top:1px solid #f0d9dc}
 .order-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:start}
 form.order{background:#fdf8f7;border:1px solid #d90429;border-radius:16px;padding:26px;box-shadow:0 8px 28px rgba(180,20,40,.08)}
@@ -117,7 +83,7 @@ input:focus,textarea:focus{outline:0;border-color:#d90429}
 details{background:#fff;border:1px solid #f0d9dc;border-radius:10px;padding:14px 18px;margin:10px auto;max-width:720px}
 summary{cursor:pointer;font-weight:700;font-size:17px;color:#241619}
 details p{color:#6b4a50;margin-top:8px;font-size:15px}
-.footer-dark{background:#8f0f1d;color:#ffd9de;text-align:center;padding:36px 0 120px}
+.footer-dark{background:#8f0f1d;color:#ffd9de;text-align:center;padding:28px 0 110px}
 .footer-dark b{color:#fff}
 .footer-dark a{color:#fff;text-decoration:underline}
 .footer-dark p{margin:6px 0;font-size:14px}
@@ -127,29 +93,18 @@ details p{color:#6b4a50;margin-top:8px;font-size:15px}
 .sticky .p b{font-size:22px;color:#241619}
 .sticky .btn{margin:0;padding:10px 22px;font-size:16px}
 @media(max-width:820px){
-.nav-links{display:none}
 .hero{padding:36px 0}
 .hero-grid{grid-template-columns:1fr;gap:28px}
 .hero h1{font-size:46px}
-.stats-grid{grid-template-columns:repeat(2,1fr)}
-.timeline{grid-template-columns:1fr}
-.why-grid{grid-template-columns:1fr}
-.spec-grid{grid-template-columns:1fr}
+.notes-row{grid-template-columns:1fr}
 .order-grid{grid-template-columns:1fr}
 .summary{position:static}
 }
 </style>
 </head>
 <body>
-<div class="topbar">সারাদেশে ক্যাশ অন ডেলিভারি &nbsp;•&nbsp; ৩০ মিলি মাত্র ৳৭৫০</div>
 <nav class="nav"><div class="wrap">
 <div class="logo">PERFUME <span>TWINS</span></div>
-<div class="nav-links">
-<a href="#notes">ঘ্রাণের নোট</a>
-<a href="#why">কেন Vampire Blood</a>
-<a href="#specs">বিবরণ</a>
-<a href="#faq">জিজ্ঞাসা</a>
-</div>
 <a class="btn small" href="#order">অর্ডার করুন</a>
 </div></nav>
 <section class="hero"><div class="wrap hero-grid">
@@ -164,7 +119,7 @@ details p{color:#6b4a50;margin-top:8px;font-size:15px}
 <p class="tagline">The Scent of Power &amp; Passion</p>
 <p class="bn">Vampire Blood এক রহস্যময়, গভীর আর মোহনীয় সুবাস — যার প্রতিটি স্পর্শে রয়েছে এক নতুন আত্মবিশ্বাস, এক অদ্ভুত আকর্ষণ।</p>
 <div class="price-row"><span class="price">৳৭৫০</span><span class="per">মাত্র &nbsp;•&nbsp; প্রতি মিলি ৳২৫</span></div>
-<p class="meta">Unisex &nbsp;•&nbsp; Pure EDP &nbsp;•&nbsp; ৩০ মিলি স্প্রে বোতল</p>
+<p class="meta">Unisex &nbsp;•&nbsp; Pure EDP &nbsp;•&nbsp; ৩০ মিলি &nbsp;•&nbsp; ৫–৬ ঘণ্টা &nbsp;•&nbsp; ২–৩ ফুট</p>
 <div class="cta-row">
 <a class="btn" href="#order">এখনই অর্ডার করুন</a>
 <a class="btn wa" href="https://wa.me/8801727533109?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE%2C%20Vampire%20Blood%20(30ml)%20%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%A1%E0%A6%BE%E0%A6%B0%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87।" target="_blank" rel="noopener">WhatsApp-এ অর্ডার করুন</a>
@@ -176,57 +131,15 @@ details p{color:#6b4a50;margin-top:8px;font-size:15px}
 </ul>
 </div>
 </div></section>
-<div class="marquee"><div class="marquee-track"><span>DARK ✦ SEDUCTIVE ✦ IRRESISTIBLY BOLD ✦ VAMPIRE BLOOD ✦ BE UNFORGETTABLE ✦ SMELL LIKE POWER ✦&nbsp;</span><span>DARK ✦ SEDUCTIVE ✦ IRRESISTIBLY BOLD ✦ VAMPIRE BLOOD ✦ BE UNFORGETTABLE ✦ SMELL LIKE POWER ✦&nbsp;</span></div></div>
-<section class="stats"><div class="wrap stats-grid">
-<div class="stat"><b>৫–৬ ঘণ্টা</b><span>লং-লাস্টিং ঘ্রাণ</span></div>
-<div class="stat"><b>২–৩ ফুট</b><span>প্রজেকশন</span></div>
-<div class="stat"><b>৪.২ / ৫</b><span>Fragrantica রেটিং (আসলটির)</span></div>
-<div class="stat"><b>৩০ মিলি</b><span>Pure EDP স্প্রে</span></div>
-</div></section>
 <section id="notes"><div class="wrap">
-<h2>ঘ্রাণের যাত্রা</h2>
-<p class="lead">যে ঘ্রাণ থেকে অনুপ্রাণিত — তিন ধাপে খুলে যায় Vampire Blood।</p>
-<div class="timeline">
-<div class="step"><div class="num">০১</div><div class="ic">🍒</div><h3>শুরু — লাল বেরি</h3><p>টক-মিষ্টি বেরির সতেজ শুরু — ফ্রুট পাঞ্চের মতো ঝাঁঝালো মিষ্টি।</p></div>
-<div class="step"><div class="num">০২</div><div class="ic">🟣</div><h3>মাঝে — প্লাম</h3><p>গভীর, মিষ্টি প্লামের নরম গভীরতা — ঘ্রাণটাকে করে তোলে রহস্যময়।</p></div>
-<div class="step"><div class="num">০৩</div><div class="ic">🌸</div><h3>শেষে — নাইট-ব্লুমিং জেসমিন</h3><p>রাতে ফোটা জুঁইয়ের মৃদু ফ্লোরাল ছোঁয়া — শুকিয়ে গেলে আরও স্পষ্ট হয়।</p></div>
+<h2>ঘ্রাণের নোট</h2>
+<p class="lead">যে ঘ্রাণ থেকে অনুপ্রাণিত — লাল বেরি, প্লাম আর নাইট-ব্লুমিং জেসমিন।</p>
+<div class="notes-row">
+<div class="note-mini"><div class="ic">🍒</div><h3>লাল বেরি</h3><p>টক-মিষ্টি সতেজ শুরু</p></div>
+<div class="note-mini"><div class="ic">🟣</div><h3>প্লাম</h3><p>গভীর মিষ্টি রহস্য</p></div>
+<div class="note-mini"><div class="ic">🌸</div><h3>নাইট-ব্লুমিং জেসমিন</h3><p>মৃদু ফ্লোরাল ছোঁয়া</p></div>
 </div>
-<p class="rating-line">আসল Bath &amp; Body Works Vampire Blood Fragrantica-তে ৪.২/৫ রেটিং পেয়েছে (১,১৪২ ভোট, ১৭০ রিভিউ)।</p>
-</div></section>
-<section id="why" class="why"><div class="wrap why-grid">
-<div>
-<h2>কেন Vampire Blood?</h2>
-<p class="lead">Be unforgettable — smell like power.</p>
-<ul class="check">
-<li><span class="tick">✓</span><div><b>রহস্যময় গভীর সুবাস</b><p>অন্ধকার, গভীর আর মোহনীয় — এক স্প্রেতেই আলাদা উপস্থিতি।</p></div></li>
-<li><span class="tick">✓</span><div><b>নতুন আত্মবিশ্বাস</b><p>প্রতিটি স্পর্শে এক নতুন আত্মবিশ্বাস — নিজেকে আরও শক্তিশালী মনে হবে।</p></div></li>
-<li><span class="tick">✓</span><div><b>অদ্ভুত আকর্ষণ</b><p>যে ঘ্রাণ একবার পায়, সে ভুলতে পারে না — ২–৩ ফুট দূর থেকেও টের পাওয়া যায়।</p></div></li>
-</ul>
-</div>
-<div class="why-photo">
-<img src="vampire-blood-detail.jpg" alt="Vampire Blood বোতলের লেবেলের ক্লোজ-আপ">
-<p>আসল বোতলের লেবেল — রিল থেকে নেওয়া ছবি</p>
-</div>
-</div></section>
-<section id="specs"><div class="wrap">
-<h2>প্রোডাক্টের বিবরণ</h2>
-<p class="lead">যা দেখছেন, ঠিক তাই পাবেন।</p>
-<div class="spec-grid">
-<div class="spec"><span>প্রোডাক্টের নাম</span><b>Vampire Blood</b></div>
-<div class="spec"><span>অনুপ্রেরণা</span><b>Bath &amp; Body Works Vampire Blood (2023)</b></div>
-<div class="spec"><span>ঘ্রাণের নোট</span><b>লাল বেরি • প্লাম • নাইট-ব্লুমিং জেসমিন</b></div>
-<div class="spec"><span>ধরন</span><b>Unisex • Pure EDP</b></div>
-<div class="spec"><span>সাইজ</span><b>৩০ মিলি স্প্রে বোতল</b></div>
-<div class="spec"><span>দাম</span><b>মাত্র ৳৭৫০</b></div>
-<div class="spec"><span>লংজিভিটি</span><b>৫–৬ ঘণ্টা</b></div>
-<div class="spec"><span>প্রজেকশন</span><b>২–৩ ফুট</b></div>
-<div class="spec"><span>ডেলিভারি</span><b>সারাদেশে ক্যাশ অন ডেলিভারি</b></div>
-</div>
-</div></section>
-<section class="rating-band"><div class="wrap">
-<div class="big">৪.২ / ৫</div>
-<div class="stars">★★★★☆</div>
-<p>Fragrantica-তে আসল Bath &amp; Body Works Vampire Blood-এর রেটিং — ১,১৪২ ভোট, ১৭০ রিভিউ। আমাদের ভার্সনটি এই ঘ্রাণ দ্বারা অনুপ্রাণিত।</p>
+<p class="rating-line">আসল Bath &amp; Body Works Vampire Blood Fragrantica-তে ৪.২/৫ রেটিং পেয়েছে (১,১৪২ ভোট)।</p>
 </div></section>
 <section id="order" class="order-sec"><div class="wrap">
 <h2>অর্ডার করুন</h2>
@@ -277,16 +190,13 @@ details p{color:#6b4a50;margin-top:8px;font-size:15px}
 </div></section>
 <section id="faq"><div class="wrap">
 <h2>সাধারণ জিজ্ঞাসা</h2>
-<details><summary>এটা কত মিলি?</summary><p>৩০ মিলি স্প্রে বোতল — একটাই সাইজ।</p></details>
 <details><summary>দাম কত?</summary><p>মাত্র ৳৭৫০। ডেলিভারি চার্জ অর্ডার কনফার্ম করার সময় জানিয়ে দেওয়া হবে।</p></details>
 <details><summary>ঘ্রাণ কতক্ষণ থাকে?</summary><p>৫–৬ ঘণ্টা। তবে আবহাওয়া ও আপনার ত্বকের ধরনের উপর নির্ভর করে কম-বেশি হতে পারে।</p></details>
-<details><summary>ছেলে-মেয়ে দুজনেই ব্যবহার করতে পারবে?</summary><p>জি, এটা Unisex — সবার জন্য।</p></details>
 <details><summary>ক্যাশ অন ডেলিভারি আছে?</summary><p>জি, সারাদেশে ক্যাশ অন ডেলিভারি। পণ্য হাতে পেয়ে টাকা দেবেন।</p></details>
 </div></section>
 <footer class="footer-dark"><div class="wrap">
 <p><b>Perfume Twins</b> — The World of Perfume</p>
 <p>🌐 <a href="https://www.perfumetwins.com" target="_blank" rel="noopener">www.perfumetwins.com</a> &nbsp;•&nbsp; 📱 WhatsApp: <a href="https://wa.me/8801727533109" target="_blank" rel="noopener">01727-533109</a> &nbsp;•&nbsp; Instagram: @perfumetwins.bd</p>
-<p>সারাদেশে ক্যাশ অন ডেলিভারি</p>
 </div></footer>
 <div class="sticky"><div class="wrap">
 <div class="p"><b>৳৭৫০</b> &nbsp;•&nbsp; Vampire Blood (৩০ মিলি)</div>
