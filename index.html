@@ -22,6 +22,8 @@ a{color:#d90429;text-decoration:none}
 .btn.wa{background:#1faa55}
 .btn.wa:hover{background:#25c05f}
 .btn.small{padding:9px 20px;font-size:15px}
+.btn.ghost{background:transparent;border:1px solid #fff;color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
 .hero{padding:48px 0 40px}
 .hero-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:52px;align-items:center}
 .hero-photo{position:relative}
@@ -197,6 +199,7 @@ details p{color:#6b4a50;margin-top:8px;font-size:15px}
 <footer class="footer-dark"><div class="wrap">
 <p><b>Perfume Twins</b> — The World of Perfume</p>
 <p>🌐 <a href="https://www.perfumetwins.com" target="_blank" rel="noopener">www.perfumetwins.com</a> &nbsp;•&nbsp; 📱 WhatsApp: <a href="https://wa.me/8801727533109" target="_blank" rel="noopener">01727-533109</a> &nbsp;•&nbsp; Instagram: @perfumetwins.bd</p>
+<p style="margin-top:14px"><button class="btn ghost" id="dlPage" type="button">📥 পেইজ ডাউনলোড করুন</button></p>
 </div></footer>
 <div class="sticky"><div class="wrap">
 <div class="p"><b>৳৭৫০</b> &nbsp;•&nbsp; Vampire Blood (৩০ মিলি)</div>
@@ -240,6 +243,28 @@ EcomTracker.purchase(orderId,{value:total,quantity:qty,phone:phone,name:name});
 }else{showConfirm(null);}
 });
 })();
+</script>
+<script>
+document.getElementById("dlPage").addEventListener("click",function(){
+fetch("vampire-blood.jpg").then(function(r){return r.blob();}).then(function(b){
+var rd=new FileReader();
+rd.onload=function(){
+var IMG=rd.result;
+var doc=document.documentElement.cloneNode(true);
+var imgs=doc.querySelectorAll("img");
+for(var i=0;i<imgs.length;i++){imgs[i].src=IMG;}
+var btn=doc.querySelector("#dlPage"); if(btn){btn.remove();}
+var html="<!DOCTYPE html>\n"+doc.outerHTML;
+var blob=new Blob([html],{type:"text/html;charset=utf-8"});
+var a=document.createElement("a");
+a.href=URL.createObjectURL(blob);
+a.download="vampire-blood-perfume-twins.html";
+document.body.appendChild(a); a.click();
+setTimeout(function(){URL.revokeObjectURL(a.href); a.remove();},500);
+};
+rd.readAsDataURL(b);
+}).catch(function(){alert("ডাউনলোড করা যায়নি — আবার চেষ্টা করুন।");});
+});
 </script>
 </body>
 </html>
